@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影像制品租赁管理系统—管理员</title>
+    <link href="css/administrator.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/administrator.js"></script>
+</head>
+<body>
+
+<div class="background">
+    <div class="top">
+        <label class="title">影像制品租赁管理系统</label>
+    </div>
+    <div class="horizontal"></div>
+    <div class="vertical">
+        <button class="button clickbtn" id="request" onclick="setApprove()">用户注册请求</button>
+        <button class="button clickbtn" onclick="setDisplay()">影像信息</button>
+        <button class="button clickbtn" onclick="inquery()">影像查询</button>
+        <button class="button clickbtn" onclick="setEnter()">影像信息录入</button>
+        <button class="button clickbtn" onclick="setStatus()">影像外借管理</button>
+    </div>
+
+    <div class="retrieve" id="retrieve">
+        <div id="searcharea" class='searcharea'>
+            <label class='searchhint'>请输入影像名:</label>
+            <input class='input' id='videoname' type='text'><br>
+            <button id='searchbutton' class='button searchbutton' onclick='search()'>检索</button>
+        </div>
+        <div id='searchresult'></div>
+    </div>
+
+    <div class="enter" id="enter">
+        <div class="enterarea">
+            <div class="item">
+                <label class="enterhint">请输入编号:</label>
+                <input class="input" id="number" type="text">
+            </div>
+            <div class="item">
+                <label class="enterhint">请输入名称:</label>
+                <input class="input" id="name" type="text">
+            </div>
+            <button class="button enterbutton" id="enterbutton" onclick="enter()">录入</button>
+        </div>
+    </div>
+
+    <div class="approve" id="approve"></div>
+    <button class="button approvebutton" id="approvebutton" onclick="approve()">批准所有</button>
+
+    <div class="status" id="status">
+        <div>
+            <label class="statushint">请输入影像制品编号:</label>
+            <input id="inputnumber" type="text" class="input">
+            <button class='button searchbutton' onclick='statusSearch()'>检索</button>
+        </div>
+
+        <div id='statusresult' class="statusresult"></div>
+
+        <div id="setarea">
+            <label class="sethint">请设置影像状态:</label>
+            <select id="select" class="select">
+                <option value="available">可借</option>
+                <option value="reserved">已预约</option>
+                <option value="rentout">已借出</option>
+            </select>
+            <button id="statusbutton" class="button statusbutton" onclick="convert()">设置</button>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="display" class="display"></div>
+
+</div>
+
+</body>
+</html>

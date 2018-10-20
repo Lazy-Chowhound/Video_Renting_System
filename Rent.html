@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影像制品租赁管理系统—注册用户</title>
+    <link href="css/Rent.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/Rent.js"></script>
+</head>
+<body>
+
+<div class="background">
+    <div class="top">
+        <label class="title">影像制品租赁管理系统</label>
+    </div>
+    <div class="horizontal"></div>
+    <div class="vertical">
+        <button class="button clickbtn" onclick="setTable()">影像信息</button>
+        <button class="button clickbtn" onclick="setSearch()">影像检索</button>
+        <button class="button clickbtn" onclick="setReserve()">预约影像</button>
+    </div>
+
+    <div class="loading" id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="table" id="table"></div>
+
+    <div class="retrieve" id="retrieve">
+        <div class='searcharea'>
+            <label class='searchhint'>请输入影像名:</label>
+            <input class='input' id='videoname' type='text'><br>
+            <button id='searchbutton' class='button searchbutton' onclick='search()'>检索</button>
+        </div>
+        <div id='searchresult'></div>
+    </div>
+
+    <div class="reserve" id="reserve">
+        <div class='reservearea'>
+            <label class='reservehint'>请输入预约的影像名:</label>
+            <input class='input' id='name' type='text'><br>
+            <button id='searchbutton2' class='button searchbutton' onclick='reserve()'>检索</button>
+        </div>
+        <div id='reserveresult'></div>
+        <button type="submit" id="reservebutton" class="button reservebutton" onclick="reservevideo()">预约</button>
+    </div>
+
+</div>
+</body>
+</html>

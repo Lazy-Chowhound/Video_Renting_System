@@ -1,0 +1,132 @@
+.top{
+    margin-top:20px;
+}
+
+.title{
+    margin-left: 300px;
+    font-size: xx-large;
+    font-family: STCaiyun;
+}
+
+.login{
+    width:20px;
+    height:20px;
+    margin-left: 450px;
+}
+
+.JmpToLogin{
+    margin-top:10px;
+    font-size: 23px;
+    font-family: STHupo;
+}
+
+.content{
+    background:url("../image/50363.jpg");
+    background-size:100% 100%;
+    margin-top:20px;
+    width:1300px;
+    height:650px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.register{
+    background: white;
+    width:400px;
+    height:200px;
+    position: absolute;
+    left:880px;
+    top:250px;
+    border-radius:20px;
+}
+
+.subregister{
+    margin-top:20px;
+}
+
+.image{
+    margin-top: 13px;
+    width:20px;
+    height:20px;
+    margin-right:2px;
+}
+
+.username{
+    margin-left:20px;
+    text-align: center;
+}
+
+.password{
+    margin-left: 20px;
+    text-align: center;
+}
+
+.password2{
+    margin-left: 7px;
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    padding: .3em .5em;
+    background-image: linear-gradient(#ddd, #bbb);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3em;
+    box-shadow: 0 1px white inset;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    color:white;
+    font-weight: bold;
+    margin-top: 15px;
+    width:100px;
+}
+
+.button:active{
+    box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+    border-color: rgba(0,0,0,.3);
+    background: #bbb;
+    margin-top: 15px;
+}
+
+
+@keyframes loading {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0.1;
+        transform: translateY(-2rem);
+    }
+}
+
+.loading {
+    display: none;
+    justify-content: center;
+    height: 780px;
+    background: #f2f2f2;
+    align-items: center;
+}
+
+.loading>div {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #8385aa;
+    opacity: .5;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    font-size: 1.5rem;
+    animation: loading 0.8s infinite alternate;
+}
+
+.loading>div:nth-child(2) {
+    animation-delay: 0.4s
+}
+
+.loading>div:nth-child(3) {
+    animation-delay: 0.6s;
+}

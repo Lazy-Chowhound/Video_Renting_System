@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>注册</title>
+    <link href="css/Register.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/Register.js"></script>
+</head>
+<body>
+<div class="loading" id="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div class="top">
+    <label class="title">影像制品租赁管理系统</label>
+    <img class="login" src="image/register.png">
+    <a href="Login.html" class="JmpToLogin">点击登录</a>
+</div>
+<div class="content">
+    <form role="form" action="php/RegisterHandle.php" method="POST">
+        <div id="register" class="register">
+            <div class="subregister">
+                <div class="item">
+                    <img src="image/user.png" class="image">
+                    <text class="usertext">用户名:</text>
+                    <input type="text" name="username" class="username" placeholder="请输入用户名">
+                </div>
+                <div class="item">
+                    <img src="image/password.png" class="image">
+                    <text class="passwordtext">密&nbsp;&nbsp;&nbsp;&nbsp;码:</text>
+                    <input type="password" name="password" class="password" placeholder="请输入密码">
+                </div>
+                <div class="item">
+                    <img src="image/password.png" class="image">
+                    <text class="passwordarea">确认密码:</text>
+                    <input type="password" name="password2" class="password2" placeholder="请再次输入密码">
+                </div>
+                <button type="submit" class="button" name="register_button" onclick="SETLoad()">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
